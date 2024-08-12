@@ -7,7 +7,7 @@ export const DynamicImageImport = () => {
   useEffect(() => {
     const loadImage = async () => {
       const { default: imagePath } = await import(
-        `../assets/${imageIndex}.jpg`
+        `../../../assets/${imageIndex}.jpg`
       );
       setImageSource(imagePath);
     };
@@ -42,7 +42,6 @@ export const DynamicImageImport = () => {
           className="btn btn-sm btn-primary"
           onClick={() => {
             if (imageIndex >= 1 && imageIndex < 4) {
-              console.log(imageIndex);
               setImageIndex((prevState) => prevState + 1);
             }
           }}
