@@ -1,6 +1,5 @@
 import { PropsWithChildren } from "react";
 import { Header } from "./header/header";
-import { NavLink } from "react-router-dom";
 
 export default function AppLayout({ children }: PropsWithChildren) {
   return (
